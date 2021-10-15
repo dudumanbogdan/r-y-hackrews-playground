@@ -7,7 +7,7 @@ const HackerListItem = () => {
                 rel='noopener'
                 target="_blank">
                 <Title>
-                    The developer community <Host>(gitconnected.com</Host>
+                    The developer community <Host>(gitconnected.com)</Host>
                 </Title>
             </ExternalLink>
             <Description>

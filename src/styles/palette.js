@@ -3,13 +3,13 @@ export const colorsDark = {
     backgroundSecondary: '#393C3E',
     text: '#bfbebe',
     textSecondary: '#848886',
-    border: '#272727'
+    border: '#272727',
 };
 
 export const colorsLight = {
-    background: '#eaeaea',
-    backgroundSecondary: '#f8f8f8',
+    background: '#EAEAEA',
+    backgroundSecondary: '#F8F8F8',
     text: '#848886',
-    textSecondary: '#aaa',
-    border: '#eaeaea'
-}
+    textSecondary: '#aaaaaa',
+    border: '#EAEAEA',
+};
