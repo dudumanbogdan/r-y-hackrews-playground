@@ -8,6 +8,7 @@ const middlewareList = [];
 middlewareList.push(thunk);
 middlewareList.push(createLogger());
 
-const middlewares = compose(applyMiddleware(...middlewareList))
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const middlewares = composeEnhancers(applyMiddleware(...middlewareList))
 
 export default middlewares;
