@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { tablet } from '../../styles/mediaQueries'
 
 export const Wrapper = styled.div`
     margin-left: auto;
@@ -7,6 +8,10 @@ export const Wrapper = styled.div`
     overflow: hidden;
     width: 85%;
     padding-bottom: 100px;
+
+    ${tablet} {
+        width: 96%;
+    }
 `;
 
 export const Title = styled.h1`
