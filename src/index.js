@@ -4,6 +4,9 @@ import reportWebVitals from './reportWebVitals';
 import App from './components/App/App'
 import configureStore from './store';
 import { Provider } from 'react-redux'
+import hackerNewsApi from './services/hackerNewsApi';
+
+hackerNewsApi.getTopStoriesId().then(ids => console.log(ids));
 
 const renderApp = () => {
   const initialState = {};
