@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import App from './components/App/App'
+import App from './components/App'
 import configureStore from './store';
 import { Provider } from 'react-redux'
 import hackerNewsApi from './services/hackerNewsApi';

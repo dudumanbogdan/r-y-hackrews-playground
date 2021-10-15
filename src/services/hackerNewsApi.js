@@ -19,7 +19,7 @@ hackerNewsApi.getStory = id => client.get(`item/${id}${JSON_QUERY}`)
 hackerNewsApi.getStoriesByPage = (ids, page) => {
     const { begin, end } = getPageSlice(PAGE_LIMIT, page);
     const activeIds = getPageValues({ begin, end, items: ids });
-    const storyPromises = activeIds.map(id => hackerNewsApi.get(id));
+    const storyPromises = activeIds.map(id => hackerNewsApi.getStory(id));
 
     return Promise.all(storyPromises);
 }

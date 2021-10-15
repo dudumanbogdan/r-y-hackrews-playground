@@ -1,11 +1,11 @@
 import HackerListItem from '../HackerListItem/HackerListItem';
 import { HackerListWrapper } from './styles'
 
-const HackerList = () => {
+const HackerList = ({ stories }) => {
     return (
         <HackerListWrapper>
-            <HackerListItem />
-            <HackerListItem />
+            {stories.map(story =>
+                <HackerListItem key={story.id} {...story} />)}
         </HackerListWrapper>
     )
 }

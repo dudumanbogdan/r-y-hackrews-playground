@@ -34,7 +34,7 @@ const actions = {
             const { storyIds, page } = payload;
 
             return hackerNewsApi.getStoriesByPage(storyIds, page)
-                .then(stories => dispatch(action(actionTypes.FETCH_STORIES_IDS_SUCCESS, stories)))
+                .then(stories => dispatch(action(actionTypes.FETCH_STORIES_IDS_SUCCESS, { stories })))
                 .catch(err => dispatch(action(actionTypes.FETCH_STORIES_IDS_FAILURE, err)))
 
         }
