@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/r-y-hackrews-playground/static/js/main.6d7ee426.chunk.js",
+    "main.js.map": "/r-y-hackrews-playground/static/js/main.6d7ee426.chunk.js.map",
+    "runtime-main.js": "/r-y-hackrews-playground/static/js/runtime-main.23deee71.js",
+    "runtime-main.js.map": "/r-y-hackrews-playground/static/js/runtime-main.23deee71.js.map",
+    "static/js/2.21d29c88.chunk.js": "/r-y-hackrews-playground/static/js/2.21d29c88.chunk.js",
+    "static/js/2.21d29c88.chunk.js.map": "/r-y-hackrews-playground/static/js/2.21d29c88.chunk.js.map",
+    "static/js/3.1a7d0b09.chunk.js": "/r-y-hackrews-playground/static/js/3.1a7d0b09.chunk.js",
+    "static/js/3.1a7d0b09.chunk.js.map": "/r-y-hackrews-playground/static/js/3.1a7d0b09.chunk.js.map",
+    "index.html": "/r-y-hackrews-playground/index.html",
+    "static/js/2.21d29c88.chunk.js.LICENSE.txt": "/r-y-hackrews-playground/static/js/2.21d29c88.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.23deee71.js",
+    "static/js/2.21d29c88.chunk.js",
+    "static/js/main.6d7ee426.chunk.js"
+  ]
+}
