@@ -1,31 +1,39 @@
 import { CommentLink, Description, ExternalLink, Host, Item, Title } from './styles'
+import getSiteHostname from '../../utils/getSiteHostname'
+import getArticleLink, { HN_ITEM, HN_USER } from '../../utils/getArticleLink'
+import * as timeago from 'timeago.js'
+
 const LINK_REL = 'noopener noreferrer nofollow';
 
+const HackerListItem = ({ by, kids = [], score, url, title, id, type, time }) => {
+    const site = getSiteHostname(url) || 'new.ycombinator.com';
+    const link = getArticleLink({ url, id });
+    const commentUrl = `${HN_ITEM}${id}`;
+    const userUrl = `${HN_USER}${by}`;
 
-const HackerListItem = () => {
     return (
         <Item>
             <ExternalLink
-                href="https://gitconnected.com"
+                href={link}
                 rel={LINK_REL}
                 target="_blank">
                 <Title>
-                    The developer community <Host>(gitconnected.com)</Host>
+                    {title} <Host>({site})</Host>
                 </Title>
             </ExternalLink>
             <Description>
-                9000 points by {' '}
+                {score} points by {' '}
                 <CommentLink
-                    href="#"
+                    href={userUrl}
                     rel="'noopener"
                     target="_blank"
-                >Test user</CommentLink>{' '}
-                1 Hour Ago {' | '}
+                >{by}</CommentLink>{' '}
+                {timeago.format(new Date(time * 1000).toISOString())} {' | '}
                 <CommentLink
-                    href="#"
+                    href={commentUrl}
                     rel="'noopener"
                     target="_blank"
-                >42 comments</CommentLink>{' '}
+                >{kids.length} comments</CommentLink>{' '}
             </Description>
         </Item>
     )
