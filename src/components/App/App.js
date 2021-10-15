@@ -1,10 +1,15 @@
 import React from 'react';
+import { ThemeProvider } from 'styled-components';
+import { colorsDark } from '../../styles/palette';
+import { Title } from './style'
 
 function App() {
   return (
-    <div className="App">
-      Test
-    </div>
+    <ThemeProvider theme={colorsDark}>
+      <Title>
+        Test
+      </Title>
+    </ThemeProvider>
   );
 }
 
