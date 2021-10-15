@@ -1,4 +1,4 @@
-import { actionTypes } from '../action-creators/index'
+import { actionTypes } from './actions';
 
 const createInitialAppState = () => ({
     theme: 'dark'
