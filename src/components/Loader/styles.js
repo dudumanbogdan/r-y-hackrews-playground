@@ -17,7 +17,7 @@ text-align: center;
 
 span {
     color: ${({ theme }) => theme.textSecondary};
-    display: iniline-block;
+    display: inline-block;
     margin-left: 4px;
     margin-right: 4px;
     font-size: 80px;
